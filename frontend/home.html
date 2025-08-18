@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOODOO EATERY</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="#home">HOME</a> |
+                <a href="#menu">MENU</a> |
+                <a href="#location">LOCATION</a> |
+                <a href="#aboutus">ABOUT US</a> |
+                <a href="#contactus">CONTACT US</a>
+            </nav>
+        </header>
+
+        <section id="home">
+            <img src="banner.jpg" alt="Banner">
+        </section>
+
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="grid-container">
+                <img src="menu1.jpg" alt="Menu item 1">
+                <img src="menu2.jpg" alt="Menu item 2">
+                <img src="menu3.jpg" alt="Menu item 3">
+            </div>
+        </section>
+
+        <section id="location">
+            <h2>Location</h2>
+            <p>38 Patli Gali, Mumbai</p>
+        </section>
+
+        <section id="contactus">
+            <h2>Contact Us</h2>
+            <p>Got questions? Want to place an order? Call us at +91 791234567 or email us at info@foodoo.com</p>
+        </section>
+    </div>
+
+    <!-- Dialogflow Messenger (modern chatbot) -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="Atliq Fast Food"
+      agent-id="8d8d74d3-8ad0-464a-a389-f75e670d239e"
+      language-code="en">
+    </df-messenger>
+
+    <!-- Chatbot Custom Styling -->
+    <style>
+        df-messenger {
+            --df-messenger-bot-message: #f4f4f4;
+            --df-messenger-user-message: #0084ff;
+            --df-messenger-button-titlebar-color: #ff6600;
+            --df-messenger-chat-background-color: #ffffff;
+            --df-messenger-font-color: #000;
+            --df-messenger-send-icon: #ff6600;
+            position: fixed;
+            bottom: 16px;
+            right: 16px;
+        }
+    </style>
+</body>
+</html>
