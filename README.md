@@ -50,7 +50,7 @@ Foodoo-FoodChatBot-master/
 
 ### 1️⃣ Clone the Repository  
 ```bash
-git clone https://github.com/your-username/Foodoo-FoodChatBot.git
+git clone https://github.com/Devatva24/Foodoo-FoodChatBot.git
 cd Foodoo-FoodChatBot-master
 ```
 
